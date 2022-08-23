@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'django_celery_results',
     'test_app',
     'django_celery_results',
     
@@ -128,19 +127,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
-
-# CELERY_RESULT_BACKEND = 'django-db'
-# CELERY_BROKER_URL = 'redis://localhost:6379/0'
-
-# CELERY_BROKER_URL = 'redis://localhost:6379' # redis url already given in tasks.py
-# CELERY_ACCEPT_CONTENT = ['application/json']
-# CELERY_TASK_SERIALIZER = 'json'
-# CELERY_RESULT_SERIALIZER = 'json'
-# CELERY_TIME_ZONE =  'Asia/Kolkata' # timezone is must
-
-
 
 CELERY_BEAT_SCHEDULE = { # scheduler configuration 
     'Task_one_schedule' : {  # whatever the name you want 
