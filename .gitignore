@@ -1,0 +1,4 @@
+# ignoring unwanted files
+*.pyc
+migrations
+*celerybeat*
